@@ -1,0 +1,26 @@
+<br><br>
+<button type="submit" (click)="clickdata()">{{show?'Hide':'Show'}}</button>
+<br><br>
+
+<h1 style="color: red" *ngIf="show"> WelCome Sneha</h1>
+
+
+<table *ngIf="show">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Contact</th>
+    </tr>
+    <tr *ngFor="let s of student">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.add}}</td>
+        <td>{{s.contact}}</td>
+    </tr>
+</table>
+
+<br><hr><hr>
+<ul *ngFor="let x of student">
+    <li >{{x.id}} --- {{x.name}} --- {{x.add}} --- {{x.contact}}</li>
+</ul>

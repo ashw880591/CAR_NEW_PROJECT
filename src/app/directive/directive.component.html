@@ -1,0 +1,14 @@
+<h1 [ngStyle]="myStyle">{{title}}</h1>
+<button type="button"(click)="handelClick()">Show</button>
+<table border="3">
+    <tr bgcolor="pink">
+        <th>RollNo</th>
+        <th>Name</th>
+        <th>City</th>
+    </tr>
+    <tr *ngFor="let s of student"bgcolor="orange">
+        <td>{{s.RollNo}}</td>
+        <td>{{s.Name}}</td>
+        <td>{{s.City}}</td>
+    </tr>
+</table>
